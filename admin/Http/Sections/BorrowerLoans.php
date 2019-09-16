@@ -11,6 +11,7 @@ use App\Model\BorrowerLoan;
 use App\Model\BorrowerLoanAgreementDocument;
 use App\Model\BorrowerLoanDialingComment;
 use App\Model\City;
+use App\Model\SMS;
 use App\Model\DialingStatus;
 use App\Model\DocumentCheckStatus;
 use App\Model\IssuedAuthority;
@@ -279,7 +280,7 @@ class BorrowerLoans extends Section
                                 view("admin::dialing_comments_table", [
                                     "dialing_comments" => $borrowerLoan->dialingComments
                                 ]),
-                                AdminFormElement::textarea('dialing_comment', 'Примечание'),
+                                AdminFormElement::textarea('dialing_comment', 'Примечание')->setRows(4),
                             ];
                         });
                 })
@@ -298,7 +299,11 @@ class BorrowerLoans extends Section
                                 ]);
                             }
                         }
-                    })
+                    }),
+                    // SMS notification message
+                    AdminFormElement::select('sms_notifications', 'Отправить SMS', SMS::class)->setDisplay('text'),
+                    AdminFormElement::textarea('sms_notification_message', '')->setRows(4),
+                    AdminFormElement::checkbox('sms_notification_checked', 'Подтвердить')
             ];
         });
 

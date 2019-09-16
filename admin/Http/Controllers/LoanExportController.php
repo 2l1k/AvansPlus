@@ -6,7 +6,7 @@ use Admin\Exports\ForecastLoanExport;
 use App\Model\BorrowerLoan;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Http\Request;
-use Maatwebsite\Excel\Excel;
+// use Maatwebsite\Excel\Excel;
 use PhpOffice\PhpWord\IOFactory;
 use PhpOffice\PhpWord\PhpWord;
 use PhpOffice\PhpWord\Shared\Html;
@@ -17,10 +17,10 @@ use ZipArchive;
 class LoanExportController extends Controller
 {
 
-    public function __construct(Request $request, AdminInterface $admin, Application $application, \Maatwebsite\Excel\Excel $excel)
+    public function __construct(Request $request, AdminInterface $admin, Application $application)
     {
 
-        $this->excel = $excel;
+        // $this->excel = $excel;
         parent::__construct($request, $admin, $application);
     }
 

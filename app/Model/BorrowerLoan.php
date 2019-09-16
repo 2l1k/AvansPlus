@@ -10,6 +10,9 @@ use App\Presenters\LoanPresenter;
 use App\Services\HistoryService;
 use App\Services\LoanService;
 use App\Traits\HasAdminSection;
+// For SMS send
+use App\Traits\SMSSender;
+use App\Model\SMS;
 
 
 class BorrowerLoan extends BaseModel
@@ -338,6 +341,31 @@ class BorrowerLoan extends BaseModel
                     "borrower_loan_id" => $borrower_loan->id,
                     "text" => "Изменился статус на '{$new_borrower_loan->loanStatus->text}'",
                     "history_key" => "system",
+                ]);
+            }
+
+
+            if (!empty($new_borrower_loan->sms_notification_checked && !empty($new_borrower_loan->sms_notifications))) {
+                $sms_title = SMS::find($new_borrower_loan->sms_notifications);
+                $ref = date("YmdHis"); // Реферал
+                // Ссылка в личный кабенет без регистрации
+                $url = 'avansplus.kz/account/sms-login/' . (int)$new_borrower_loan->borrower_id . '/' . $ref; 
+                // СМС уведомление для заёмщика
+                SMSSender::sendSMSNotification(
+                    $new_borrower_loan->borrower->phone_number, // Номер телефона заказчика
+                    $new_borrower_loan->id, // Id заявки
+                    $new_borrower_loan->borrower_id, // Id заказщика
+                    $sms_title->text . '. ' . $new_borrower_loan->sms_notification_message, // Сообщение уведомления
+                    $url,
+                    $ref
+                );
+                // Mail уведомление для заёмщика
+                MailHelper::sendSMSNotification([
+                    "to"          => $new_borrower_loan->borrower->email,
+                    "name"        => $new_borrower_loan->borrower->lastname . ' ' .  $new_borrower_loan->borrower->firstname . ' ' .  $new_borrower_loan->borrower->fathername,
+                    "title"       => $sms_title->text, // Заголовок уведомления
+                    'message'     => $new_borrower_loan->sms_notification_message, // Сообщение уведомления
+                    "url"         => $url 
                 ]);
             }
         });

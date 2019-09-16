@@ -7,6 +7,7 @@ use App\Helpers\AppHelper;
 use App\Mail\Admin\NewLoan;
 use App\Mail\Agreement;
 use App\Mail\Notification;
+use App\Mail\SMSNotification;
 use Mail;
 
 class MailHelper
@@ -66,4 +67,9 @@ class MailHelper
         return Mail::to(AppHelper::getConfig("admin_email"))->send(new NewLoan($mail_data));
     }
 
+    // SMS notification
+    public static function sendSMSNotification($mail_data)
+    {
+        return Mail::to($mail_data["to"])->send(new SMSNotification($mail_data));		 
+    }
 }

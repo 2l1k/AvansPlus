@@ -37,6 +37,7 @@ class AdminSectionsServiceProvider extends ServiceProvider {
         'App\Model\City'      => 'Admin\Http\Sections\Cities',
         'App\Model\LoanHistoryEvent'      => 'Admin\Http\Sections\LoanHistoryEvents',
         'App\Model\BorrowerBlackList'      => 'Admin\Http\Sections\BlackList',
+        'App\Model\Notification' => 'Admin\Http\Sections\Notifications',
 
         'App\Model\Contact'  => 'Admin\Http\Sections\Contacts',
         'App\Model\Contact2' => 'Admin\Http\Sections\Contacts2',

@@ -66,6 +66,8 @@ Route::group(['middleware' => 'web'], function () {
     Route::group(['prefix' => 'account', 'as' => 'account.'], function () {
         Route::post('/login', 'AccountController@login')->name("login");
         Route::get('/logout', 'AccountController@logout')->name("logout");
+        // SMS Auth
+        Route::get('/sms-login/{id}/{ref}', 'AccountController@loginSms');
     });
 
 

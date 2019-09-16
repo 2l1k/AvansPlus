@@ -6,6 +6,7 @@ use App\Http\Requests\Request;
 use App\SMSRU;
 use Log;
 use Symfony\Component\Console\Helper\Helper;
+use App\Model\Notification;
 
 trait SMSSender
 {
@@ -108,4 +109,30 @@ trait SMSSender
 //        return $send_status;
 //    }
 
+    /**
+     * Отправляет SMS уведомление
+     *
+     * @param $phone_number
+     * @return array|bool|mixed|\stdClass
+     */
+    static function sendSMSNotification($phone_number, $borrower_loan_id, $borrower_id, $message, $url, $ref){
+        $sms_response = file_get_contents('http://kazinfoteh.org:9507/api?action=sendmessage&username=avans1&password=Bdl9Wqls4&recipient='.  $phone_number .'&messagetype=SMS:TEXT&originator=INFO_KAZ&messagedata='. AppHelper::transliterate($message . ' - войдите в личный кабинет ' . $url));
+        preg_match_all( '#<statusmessage>(.+?.)</statusmessage>#is', $sms_response, $sms_statusmessage );
+
+        $sms_status = null;
+        if (!empty($sms_statusmessage[1][0]) == 'Message accepted for delivery') {
+            $sms_status = 'Доставлено';
+        } else {
+            $sms_status = 'Не доставлено';
+        }
+        Notification::create([
+            'borrower_loan_id'  => (int)$borrower_loan_id, // Id заявки
+            'borrower_id'  => (int)$borrower_id, // Id заказщика
+            'message'  => $message, // Сообщение уведомления
+            'status'  => $sms_status, // Статус уведомления
+            'ref'  => $ref // Реферал
+        ]);
+
+        return $sms_status;
+   }
 }

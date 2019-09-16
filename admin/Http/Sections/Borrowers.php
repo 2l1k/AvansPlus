@@ -8,6 +8,7 @@ use AdminFormElement;
 use AdminSection;
 use App\Helpers\FileHelper;
 use App\Model\Borrower;
+use App\Model\Notification;
 use App\Model\BorrowerIdentificationCard;
 use App\Model\City;
 use App\Model\DocumentCheckStatus;
@@ -236,10 +237,17 @@ class Borrowers extends Section
 
 
         $borrower_loans = null;
-        if (!empty($id)) {
+        if (!empty($borrower_id)) {
             //Все займы по заёмщику
             $borrower_loans = AdminSection::getModel(LoansByBorrower::class)->fireDisplay();
-            $borrower_loans->getScopes()->push(['loansByBorrowerId', $id]);
+            $borrower_loans->getScopes()->push(['loansByBorrowerId', $borrower_id]);
+        }
+
+        $borrower_sms_notifications = null;
+        if (!empty($borrower_id)) {
+            //Все СМС уведомления по заёмщику
+            $borrower_sms_notifications = AdminSection::getModel(Notification::class)->fireDisplay();
+            $borrower_sms_notifications->getScopes()->push(['smsByBorrowerId', $borrower_id]);
         }
 
         if ($borrower_loans) {
@@ -251,6 +259,18 @@ class Borrowers extends Section
                         ];
                     }),
             ]), 'История займов');
+        }
+
+        //Все СМС уведомления по заёмщику
+        if ($borrower_sms_notifications) {
+            $tabs->appendTab(new \SleepingOwl\Admin\Form\FormElements([
+                AdminFormElement::columns()
+                    ->addColumn(function () use ($borrower_sms_notifications) {
+                        return [
+                            $borrower_sms_notifications
+                        ];
+                    }),
+            ]), 'История СМС');
         }
 
         $form->addElement($tabs);

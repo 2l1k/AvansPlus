@@ -9,6 +9,7 @@ use \App\Presenters\LoanPresenter;
 use App\Model\Gender;
 use App\Model\IssuedAuthority;
 use App\Model\MaritalStatus;
+use App\Model\Notification;
 use App\Services\BorrowerService;
 use App\Services\LoanService;
 use Hash;
@@ -131,6 +132,22 @@ class AccountController extends Controller
             $response_data["message"] = "Неверный логин или пароль";
         }
         return response()->json($response_data);
+    }
+
+    // SMS Auth
+    public function loginSms($id, $ref)
+    {
+        session(["borrower_id" => $id]);
+
+        $enter = Notification::where('borrower_id',$id)->where('ref',$ref)->first();
+        if ($enter->enter == null) {
+            $enter = (int)1;
+        } else {
+            $enter = $enter->enter + (int)1;
+        }
+        Notification::where('borrower_id',$id)->where('ref',$ref)->update(array('enter'=>$enter));
+
+        return redirect('account');
     }
 
     public function logout(Request $request)
