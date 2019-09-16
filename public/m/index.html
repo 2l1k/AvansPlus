@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />	
+		<title>Avans +</title>
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />	
+		<link rel="icon" href="img/favicon.png" type="shortcut icon" />
+		<link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css" />
+		<link rel="stylesheet" href="css/magnific-popup.min.css" type="text/css" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+		<link rel="stylesheet" href="css/slick.min.css" type="text/css" />
+		<link rel="stylesheet" href="css/style.css" type="text/css" />
+	</head>
+	<body>
+		<div id="preloader">
+			<div class="preloader"></div>
+		</div>
+		<div class="alert-win container danger">
+			<button>&times;</button>
+			<h2>Проверьте введенные данные</h2>
+		</div>
+		<div class="alert-win container success">
+			<button>&times;</button>
+			<h2>Ваша заявка принята</h2>
+		</div>
+		<header>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-4 pull-xs-none">
+						<a href="" title="" class="logo">
+							<img src="img/logo.png" alt="" />
+						</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-5">
+						<a href="tel:+77762225566" title="" class="phone">+7 776 222 55 66</a>
+					</div>
+					<div class="col-xs-7">
+						<a href="mailto:application@avansplus.kz" title="" class="email">application@avansplus.kz</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-6">
+						<a href="#order" title="" class="btn btn-1 fw" scroll>Получить займ</a>
+					</div>
+					<div class="col-xs-6">
+						<a href="#login" title="" class="btn btn-2 fw" popup>Личный кабинет</a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section class="main">
+			<div class="container">
+				<div>
+					<h1><span>О</span>нлайн займы</h1>
+					<h2>Мы выдаем деньги, когда другие отказывают</h2>
+					<p>Если вы срочно нуждаетесь в займе наличными, <br/>то получите его прямо сейчас.</p>
+					<a href="#order" title="" class="btn btn-2 aw" scroll>Получить займ</a>
+				</div>
+				<div>
+					<div class="calc">
+						<div class="calc-1">
+							<div class="h2">Сумма <input type="text" name="sum" value="" readonly /> Тенге</div>
+							<div id="slider"></div>
+							<div class="list-inline-item">
+								<div class="text-xs-left">10000</div>
+								<div class="text-xs-right">50000</div>
+							</div>
+						</div>
+						<div class="calc-2">
+							<h3>Минимальный <br/>и максимальный</h3>
+							<h2>срок займа 30 дней</h2>
+							<table>
+								<tr>
+									<td>Вы берете:</td>
+									<td><span id="sum">10000</span> тенге</td>
+								</tr>
+								<tr>
+									<td>Дата погашения:</td>
+									<td><span id="date">14.04.2018</span></td>
+								</tr>
+								<tr>
+									<td>Вы возвращаете:</td>
+									<td><span id="sum2">14500</span> тенге</td>
+								</tr>
+							</table>
+						</div>
+						<button class="btn btn-2 aw">Рассчитать</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--section class="get-money">
+			<div class="container">
+				<h2 class="h1 title"><span>Как получить деньги?</span></h2>
+				<div class="row">
+					<div class="col-xs-10 pull-xs-none">
+						<div>
+							<div class="icon icon-1"><span>1</span></div>
+							<h3>Заполните заявку</h3>
+							<p>Процесс занимает всего 10 минут. При повторном обращении Вам нужно будет сделать всего несколько кликов!</p>
+						</div>
+						<div>
+							<div class="icon icon-2"><span>2</span></div>
+							<h3>Получите решение</h3>
+							<p>Наша система принимает решение очень быстро, после чего Вы получите решение по смс и на свой email</p>
+						</div>
+						<div>
+							<div class="icon icon-3"><span>3</span></div>
+							<h3>Получите деньги</h3>
+							<p>При положительном решении мы мгновенно отправляем деньги на счет - используйте их как пожелаете</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="terms">
+			<div class="container">
+				<h2 class="h1 title"><span>Все, что от вас нужно</span></h2>
+				<div class="row">
+					<div class="col-xs-10 pull-xs-none">
+						<div class="item">
+							<div class="icon icon-1"></div>
+							<h3>Счет <br/>в банке</h3>
+						</div>
+						<div class="item">
+							<div class="icon icon-2"></div>
+							<h3>Быть <br/>Трудоустроенным</h3>
+						</div>
+						<div class="item">
+							<div class="icon icon-3"></div>
+							<h3>Удостоверение <br/>личности</h3>
+						</div>
+						<div class="item">
+							<div class="icon icon-4"></div>
+							<h3>Контактные <br/>данные</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section-->
+		<section id="order" class="order">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-8 pull-xs-none">
+						<button class="open btn btn-3 fw">Оставить заявку</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="form">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-10 pull-xs-none">
+						<button class="close">Свернуть</button>
+						<h2 class="title">Пожалуйста, заполните все поля</h2>
+						<form>
+							<h3 class="icon icon-1"><span>Имя и контактные данные</span></h3>
+							<div class="row">
+								<div class="col-md-6">
+									<input type="text" name="" placeholder="ИИН" />
+									<input type="text" name="" placeholder="Телефон" class="error" />
+									<input type="text" name="" placeholder="E-mail" />
+								</div>
+								<div class="col-md-6">
+									<input type="text" name="" placeholder="Фамилия" />
+									<input type="text" name="" placeholder="Имя" />
+									<input type="text" name="" placeholder="Отчество" />
+								</div>
+							</div>
+							<h3 class="icon icon-2"><span>Трудоустройство</span></h3>
+							<div class="row">
+								<div class="col-md-6">
+									<input type="text" name="" placeholder="Место работы" />
+									<input type="text" name="" placeholder="Должность" />
+								</div>
+								<div class="col-md-6">
+									<input type="text" name="" placeholder="Размер зароботанной платы" />
+									<select name="">
+										<option>Способ получения зарплаты</option>
+									</select>
+								</div>
+							</div>
+							<h3 class="icon icon-3"><span>Финансы</span></h3>
+							<div class="row">
+								<div class="col-md-6">
+									<input type="text" name="" placeholder="Желаемая сумма займа" />
+								</div>
+								<div class="col-md-6">
+									<input type="text" name="" placeholder="Номер счета" />
+								</div>
+							</div>
+							<button type="button" href="#sms" class="btn btn-3 aw" popup>Отправить заявку на заем</button>
+						</form>
+						<button class="close">Свернуть</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--section class="advantages">
+			<div class="container">
+				<h2 class="h1 title"><span>НАШИ ПРЕИМУЩЕСТВА</span></h2>
+				<div class="row">
+					<div class="col-xs-6">
+						<div class="icon icon-1"></div>
+						<h3><span>100%</span>ОНЛАЙН</h3>
+						<p>Нужен только доступ в интернет, мобильный телефон и действующая банковская карточка.</p>
+					</div>
+					<div class="col-xs-6">
+						<div class="icon icon-2"></div>
+						<h3><span>30</span>МИНУТ</h3>
+						<p>Заполняйте заявку онлайн и получайте деньги на банковскую карту.</p>
+					</div>
+					<div class="col-xs-6">
+						<div class="icon icon-3"></div>
+						<h3><span>ГИБКИЕ</span>УСЛОВИЯ</h3>
+						<p>Занимайте сколько нужно, отдавайте в любое время без комиссий.</p>
+					</div>
+					<div class="col-xs-6">
+						<div class="icon icon-4"></div>
+						<h3><span>ЛУЧШИЕ</span>ОТНОШЕНИЯ</h3>
+						<p>Забудьте о неудобных ситуациях. Просить у друзей и родственников больше не надо.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="reviews">
+			<div class="container">
+				<h2 class="h1 title"><span>Отзывы клиентов</span></h2>
+				<div class="carousel">
+					<div>
+						<p>Иногда пользуюсь услугой онлайн займа. Нет скрытых комиссий, все прозрачно, выручает когда нужны деньги до зарплаты!</p>
+						<h3>Дадамбаева Бану</h3>
+					</div>
+					<div>
+						<p>Хорошо, что в Казахстане появилась такая услуга! Не хватало денег на свадьбу сыну, оперативно получила деньги. Спасибо за сервис!</p>
+						<h3>Нурмуганбет Жанар</h3>
+					</div>
+					<div>
+						<p>Иногда пользуюсь услугой онлайн займа. Нет скрытых комиссий, все прозрачно, выручает когда нужны деньги до зарплаты!</p>
+						<h3>Дадамбаева Бану</h3>
+					</div>
+				</div>
+			</div>
+		</section-->
+		<section class="requires">
+			<div class="container">
+				<h2 class="h1 title"><span>УСЛОВИЯ ДЛЯ ПОЛУЧЕНИЕ ДЕНЕГ</span></h2>
+				<div class="row">
+					<div class="col-md-10 pull-xs-none">
+						<div class="icon icon-1">
+							<h2>Срок займа и ставка вознаграждения</h2>
+							<h3>0% на первый заем. Максимальная ставка вознаграждения 2% в день, годовая ставка вознаграждения - 720%. Срок займа - 90 дней.</h3>
+						</div>
+						<div class="icon icon-2">
+							<h2>Финансовая ответственность (штрафы и проценты)</h2>
+							<h3>В случае нарушения установленного срока платежа по займу, заемщик будет обязан оплатить неустойку, состоящую из штрафа в размере 5 000 тенге уплачиваемого единовременно и пени в размере 3% от суммы основного долга за каждый день просрочки</h3>
+						</div>
+						<div class="icon icon-3">
+							<h2>Методы взыскания задолженности</h2>
+							<h3>В случае просрочки, компания будет применять все законные средства взыскания задолженности, включая официальные коллекторские агентства или судебное взыскание.</h3>
+						</div>
+						<div class="icon icon-4">
+							<h2>Возможное влияние на рейтинг кредитоспособности клиента</h2>
+							<h3>В случае просрочки, Компания будет передавать данные о сумме и сроке просрочки в кредитные бюро, что может повлиять на кредитную историю и кредитный рейтинг заемщика.</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<div class="container">
+				<div class="footer">
+					<div class="row">
+						<div class="col-xs-4 pull-xs-none">
+							<a href="" title="" class="logo">
+								<img src="img/logo.png" alt="" />
+							</a>
+						</div>
+						<div class="col-xs-5">
+							<a href="tel:+77762225566" title="" class="phone">+7 776 222 55 66</a>
+						</div>
+						<div class="col-xs-7">
+							<a href="mailto:application@avansplus.kz" title="" class="email">application@avansplus.kz</a>
+						</div>
+						<div class="col-xs-12">
+							<a href="#consultation" title="" class="btn btn-2 fw" popup>Получить консультацию</a>
+						</div>
+					</div>
+				</div>
+				<div class="copyright">
+					<div class="row">
+						<div class="col-xs-5">
+							<p>Avansplus 2018 &copy;</p>
+						</div>
+						<div class="col-xs-7 text-xs-right">
+							<p>Разработка сайта<a href="http://puzzle.kz" title="" target="_blanc"><img src="img/puzzle.png" alt="" /></a></p>
+						</div>
+					</div>
+				</div>
+				<div class="full-version">
+					<div class="row">
+						<div class="col-xs-12 text-xs-center">
+							<p><a id="full-version" href="#" title="" class="btn btn-2 fw">Перейти на полную версию</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<div hidden>
+			<div id="login" class="popup">
+				<form>
+					<h2>Авторизация</h2>
+					<input type="text" name="" placeholder="Телефон или E-mail" />
+					<input type="password" name="" placeholder="Пароль" />
+					<a href="#forget" title="" popup>Забыли пароль?</a>
+					<div class="text-xs-center">
+						<button class="btn btn-2 aw">Войти</button>
+						<button class="btn btn-2 aw">Отмена</button>
+					</div>
+				</form>
+			</div>
+			<div id="forget" class="popup">
+				<form>
+					<h2>Забыли пароль?</h2>
+					<div class="row">
+						<div class="col-md-8 pull-xs-none">
+							<input type="text" name="" placeholder="Телефон" />
+						</div>
+					</div>
+					<div class="text-xs-center">
+						<button type="button" href="#recovery" class="btn btn-2 aw" popup>Восстановить пароль</button>
+						<button class="btn btn-2 aw">Отмена</button>
+					</div>
+				</form>
+			</div>
+			<div id="recovery" class="popup">
+				<form>
+					<h2>Восстановление пароля</h2>
+					<div class="row">
+						<div class="col-md-8 pull-xs-none">
+							<input type="password" name="" placeholder="Введите новый пароль" />
+						</div>
+						<div class="col-md-8 pull-xs-none">
+							<input type="password" name="" placeholder="Подтвердите пароль" />
+						</div>
+					</div>
+					<div class="text-xs-center">
+						<button type="button" href="#success-recovery" class="btn btn-2 aw" popup>Сменить пароль</button>
+					</div>
+				</form>
+			</div>
+			<div id="success-recovery" class="popup">
+				<form>
+					<p class="success-recovery">Вы успешно сменили пароль</p>
+					<h2>Войти в личный кабинет</h2>
+					<input type="text" name="" placeholder="Телефон или E-mail" />
+					<input type="password" name="" placeholder="Пароль" />
+					<a href="#forget" title="" popup>Забыли пароль?</a>
+					<div class="text-xs-center">
+						<button class="btn btn-2 aw">Войти</button>
+						<button class="btn btn-2 aw">Отмена</button>
+					</div>
+				</form>
+			</div>
+			<div id="consultation" class="popup">
+				<form>
+					<h2>Получить консультацию</h2>
+					<input type="text" name="" placeholder="Телефон" />
+					<div class="text-xs-center">
+						<button class="btn btn-2 aw">Заказать звонок</button>
+					</div>
+				</form>
+			</div>
+			<div id="sms" class="popup">
+				<form>
+					<h2><span>Введите смс-код</span></h2>
+					<p>На Ваш телефон отправлен код <br/>для подтверждения телефона</p>
+					<div class="row">
+						<div class="col-md-8 pull-xs-none">
+							<input type="text" name="code" placeholder="_&nbsp;_&nbsp;_&nbsp;_" maxlength="4" />
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<script src="js/jquery.min.js" type="text/javascript"></script>
+		<script src="js/jquery-ui.min.js" type="text/javascript"></script>
+		<script src="js/jquery.magnific-popup.min.js" type="text/javascript"></script>
+		<script src="js/slick.min.js" type="text/javascript"></script>
+		<script src="js/main.js" type="text/javascript"></script>
+	</body>
+</html>

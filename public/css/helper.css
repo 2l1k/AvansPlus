@@ -1,0 +1,12 @@
+.default_popup_width{
+    max-width: 450px;
+}
+
+.middle_popup_width{
+    max-width: 60%;
+}
+
+.popup.danger{
+    color: #fff;
+    background: #da2e26;
+}

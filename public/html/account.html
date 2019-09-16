@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<!--meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /-->	
+		<title>Avans +</title>
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />	
+		<link rel="icon" href="img/favicon.png" type="shortcut icon" />
+		<link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css" />
+		<link rel="stylesheet" href="css/magnific-popup.min.css" type="text/css" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+		<link rel="stylesheet" href="css/slick.min.css" type="text/css" />
+		<link rel="stylesheet" href="css/style.css" type="text/css" />
+		<link rel="stylesheet" href="css/media.css" type="text/css" />
+	</head>
+	<body>
+		<div id="error-1" class="alert-win container danger">
+			<button>&times;</button>
+			<h2>Проверьте введенные данные</h2>
+		</div>
+		<div id="error-2" class="alert-win container danger">
+			<button>&times;</button>
+			<h2>Формат файла не поддерживается</h2>
+		</div>
+		<div id="error-3" class="alert-win container danger">
+			<button>&times;</button>
+			<h2>Погасите открытый займ</h2>
+		</div>
+		<div id="success" class="alert-win container success">
+			<button>&times;</button>
+			<h2>Ваша заявка принята</h2>
+		</div>
+		<header>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2">
+						<a href="/" title="" class="logo">
+							<img src="img/logo.png" alt="" />
+						</a>
+					</div>
+					<div class="col-md-2">
+						<a href="tel:+77762225566" title="" class="phone">+7 776 222 55 66</a>
+					</div>
+					<div class="col-md-3">
+						<a href="mailto:application@avansplus.kz" title="" class="email">application@avansplus.kz</a>
+					</div>
+					<div class="col-md-2">
+						<a href="#order" title="" class="btn btn-1 fw" scroll>Получить займ</a>
+					</div>
+					<div class="col-md-2">
+						<a href="#login" title="" class="btn btn-2 fw" popup>Личный кабинет</a>
+					</div>
+					<div class="col-md-1">
+						<a href="/" title="" class="btn btn-2 fw">Выйти</a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section class="help">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-11 pull-xs-none">
+						<a href="/" title="" class="home"></a>
+						<a href="/how-it-works.html" title="">Как это работает</a>
+						<a href="/faq.html" title="">FAQ</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="account">
+			<div class="container">
+				<h2 class="h1 title"><span>Личный кабинет</span></h2>
+				<div class="tabs">
+					<div class="tab-nav">
+						<a href="#tab-1" title="" class="active" tab>Открытый <br/>заем</a>
+						<a href="#tab-2" title="" class="" tab>Настройки <br/>профиля</a>
+						<a href="#tab-3" title="" class="" tab>Платежные <br/>реквизиты</a>
+						<a href="#tab-4" title="" class="" tab>История <br/>займов</a>
+					</div>
+					<div class="tab-content">
+						<div id="tab-1" class="tab">
+							<div class="row">
+								<div class="col-md-5 pull-xs-none">
+									<h2 class="title">
+										<a href="/repayment.html" title="" class="pull-xs-left">Погасить сейчас</a>
+										<a href="/prolongation.html" title="" class="pull-xs-right">Продлить</a>
+									</h2>
+									<div class="hint">Продлите займ сейчас всего за 32,5 тенге</div>
+									<h2 class="title">
+										<a href="" title="">Отказаться</a>
+									</h2>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-10 pull-xs-none">
+									<h1 class="title late">Ваш займ просрочен! Сумма к погашению состовляет 650000 тенге</h1>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-8 pull-xs-none">
+									<table>
+										<tr>
+											<td>Номер договора займа</td>
+											<td>24345</td>
+										</tr>
+										<tr>
+											<td>Заявка принята</td>
+											<td>12.03.2018 в 12:34</td>
+										</tr>
+										<tr>
+											<td>Дата выдачи займа</td>
+											<td>12.03.2018 в 12:36</td>
+										</tr>
+										<tr>
+											<td>Сумма займа</td>
+											<td>20 000 тенге</td>
+										</tr>
+										<tr>
+											<td>Процент вознаграждения</td>
+											<td>5 тенге</td>
+										</tr>
+										<tr>
+											<td>Пени</td>
+											<td>20 тенге</td>
+										</tr>
+										<tr>
+											<td>Погасить не позже</td>
+											<td><span class="late">12. 04. 2018 в 12:36 - просрочен</span></td>
+										</tr>
+										<tr>
+											<td>Срок пользования займом</td>
+											<td>36 дней</td>
+										</tr>
+										<tr>
+											<td>Погашенная сумма</td>
+											<td>0 тенге</td>
+										</tr>
+										<tr>
+											<td>Осталось к погашению</td>
+											<td>20 020 тенге</td>
+										</tr>
+										<tr>
+											<td>Статус кредита</td>
+											<td>Одобрен</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</div>
+						<div id="tab-2" class="tab">
+							<div class="row">
+								<div class="col-md-8 pull-xs-none">
+									<form>
+										<div class="item">
+											<h3>Контактная информация</h3>
+											<div class="row">
+												<div class="col-md-4">
+													<label>Мобильный телефон</label>
+													<input type="text" name="" value="test" readonly />
+												</div>
+												<div class="col-md-4">
+													<label>Электронная почта</label>
+													<input type="text" name="" value="test" readonly />
+												</div>
+											</div>
+										</div>
+										<div class="item">
+											<h3>Данные из удостоверения личности <button type="button" id="edit">Редактировать</button></h3>
+											<div class="row">
+												<div class="col-md-4">
+													<label>Фамилия</label>
+													<input type="text" name="" value="test" readonly />
+												</div>
+												<div class="col-md-4">
+													<label>Имя</label>
+													<input type="text" name="" value="test" readonly />
+												</div>
+												<div class="col-md-4">
+													<label>Отчество</label>
+													<input type="text" name="" value="test" readonly />
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-4">
+													<label>Пол</label>
+													<select name="" disabled>
+														<option value="">Мужской</option>
+														<option value="">Женский</option>
+													</select>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-4">
+													<label>ИНН</label>
+													<input type="text" name="" value="test" readonly />
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-4">
+													<label>Дата рождения</label>
+													<input type="text" name="" value="test" readonly />
+												</div>
+												<div class="col-md-4">
+													<label>Место рождения</label>
+													<input type="text" name="" value="test" readonly />
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-4">
+													<label>№ удостоверения личности</label>
+													<input type="text" name="" value="test" readonly />
+												</div>
+												<div class="col-md-4">
+													<label>Дата выдачи</label>
+													<input type="text" name="" value="test" readonly />
+												</div>
+												<div class="col-md-4">
+													<label>Срок выдачи</label>
+													<input type="text" name="" value="test" readonly />
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-4">
+													<label>Кем выдано</label>
+													<input type="text" name="" value="test" readonly />
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-4">
+													<label>Семейное положение</label>
+													<input type="text" name="" value="test" readonly />
+												</div>
+											</div>
+											<div class="text-xs-center" hidden>
+												<button class="btn btn-2 aw">Сохранить</button>
+												<button class="btn btn-2 aw">Отмена</button>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+						<div id="tab-3" class="tab">
+							<div class="row">
+								<div class="col-md-8 pull-xs-none">
+									<form>
+										<div class="item">
+											<h3>Платежные реквизиты</h3>
+											<div class="row">
+												<div class="col-md-4">
+													<label>Тип</label>
+													<select name="">
+														<option>Банковский счет</option>
+													</select>
+												</div>
+												<div class="col-md-4">
+													<label>Номер</label>
+													<input type="text" name="" value="test" />
+												</div>
+												<div class="col-md-4 text-xs-right">
+													<button class="btn btn-2 aw">Изменить</button>
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+						<div id="tab-4" class="tab">
+							<div class="row">
+								<div class="col-md-8 pull-xs-none">
+									<table>
+										<thead>
+											<tr>
+												<th>№</th>
+												<th>Сумма кредита</th>
+												<th>Дата выдачи</th>
+												<th>Дата возврата</th>
+												<th>Статус</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td class="id">5489463</td>
+												<td>3 000 000 тенге.</td>
+												<td>12.12.2017</td>
+												<td>12.12.2018</td>
+												<td class="status">Погашен</td>
+											</tr>
+											<tr>
+												<td class="id">5489463</td>
+												<td>3 000 000 тенге.</td>
+												<td>12.12.2017</td>
+												<td>12.12.2018</td>
+												<td class="status">Погашен</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="calculator">
+			<div class="container">
+				<h2>Какую сумму денег Вы хотели бы получить?</h2>
+				<div class="row">
+					<div class="col-md-5 pull-xs-none">
+						<div class="calc">
+							<div class="calc-1">
+								<div class="h2">Сумма <input type="text" name="sum" value="" readonly /> Тенге</div>
+								<div id="slider"></div>
+								<div class="list-inline-item">
+									<div class="text-xs-left">10000</div>
+									<div class="text-xs-right">50000</div>
+								</div>
+								<p>срок займа 30 дней</p>
+								<button class="btn btn-3 aw">Рассчитать</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="result">
+					<p>Сумма в день 200 тг.</p>
+					<div class="row">
+						<div class="col-md-4 step">
+							<h3>Вы берете</h3>
+							<h2><span id="sum">10000</span> тенге</h2>
+						</div>
+						<div class="col-md-4 step">
+							<h3>До (включительно)</h3>
+							<h2><span id="date"></span></h2>
+						</div>
+						<div class="col-md-4 step">
+							<h3>Возвращаете</h3>
+							<h2><span id="sum2">14500</span>  <span id="dicount">12615</span> тенге</h2>
+						</div>
+					</div>
+					<div class="text-xs-center">
+						<button type="button" href="#step-1" class="btn btn-3 aw" wait>Оформить заем</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="how-it-work">
+			<div class="container">
+				<div class="items">
+					<h2 class="h1 title"><span>Как это работает?</span></h2>
+					<div class="row">
+						<div class="col-md-3">
+							<div class="item">
+								<div class="icon icon-1"></div>
+								<h3><span>Выбеите сумму</span>и срок займа</h3>
+								<p>Срок займа может составлять 5 или более дней, максимум - 30 дней.</p>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="item">
+								<div class="icon icon-2"></div>
+								<h3><span>Оформите</span>завку</h3>
+								<p>У Вас это займет не больше 10 минут.</p>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="item">
+								<div class="icon icon-3"></div>
+								<h3><span>Ожидайте</span>ответ</h3>
+								<p>Мы дадим ответ в течение 1 минуты.</p>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="item">
+								<div class="icon icon-4"></div>
+								<h3><span>Получите</span>Деньги</h3>
+								<p>24 часа. Visa.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="get-money">
+			<div class="container">
+				<h2 class="h1 title"><span>Получить онлайн заем очень просто</span></h2>
+				<div class="row">
+					<div class="col-md-10 pull-xs-none">
+						<div class="row">
+							<div class="col-md-4">
+								<div class="icon icon-1"><span>1</span></div>
+								<h3>Оформите заявку</h3>
+								<p>На кредит на сайте. <b>Форма</b> для заполнения заявки на займ проста и интуитивно понятна - это займет у Вас не более 15 минут</p>
+							</div>
+							<div class="col-md-4">
+								<div class="icon icon-2"><span>2</span></div>
+								<h3>Подпишите оферту</h3>
+								<p>С помощью кода, присланного в <b>СМС</b>, и получите решение по займу. Решение наша система примет в течение <b>20 минут</b></p>
+							</div>
+							<div class="col-md-4">
+								<div class="icon icon-3"><span>3</span></div>
+								<h3>Получите деньги</h3>
+								<p>На Вашу карту или банковский счет. В зависимости от банка, перевод денег занимает от 1 часа до суток</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="need">
+			<div class="container">
+				<h2 class="h1 title"><span>Что нужно заемщику, чтобы получить кредит?</span></h2>
+				<div class="row">
+					<div class="col-md-3">
+						<div class="item">
+							<div class="icon icon-1"></div>
+							<h3>Счет<br/>в банке</h3>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="item">
+							<div class="icon icon-2"></div>
+							<h3>Быть<br/>Трудоустроенным</h3>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="item">
+							<div class="icon icon-3"></div>
+							<h3>Удостоверение<br/>личности</h3>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="item">
+							<div class="icon icon-4"></div>
+							<h3>Контактные<br/>данные</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<div class="container">
+				<div class="footer">
+					<div class="row">
+						<div class="col-md-2">
+							<a href="/" title="" class="logo">
+								<img src="img/logo.png" alt="" />
+							</a>
+						</div>
+						<div class="col-md-2">
+							<a href="tel:+77762225566" title="" class="phone">+7 776 222 55 66</a>
+						</div>
+						<div class="col-md-3">
+							<a href="mailto:application@avansplus.kz" title="" class="email">application@avansplus.kz</a>
+						</div>
+						<div class="col-md-3 col-md-offset-2">
+							<a href="#consultation" title="" class="btn btn-2 fw" popup>Получить консультацию</a>
+						</div>
+					</div>
+				</div>
+				<div class="copyright">
+					<div class="row">
+						<div class="col-sm-6">
+							<p>Avansplus 2018 &copy;</p>
+						</div>
+						<div class="col-sm-6 text-sm-right">
+							<p>Разработка сайта<a href="http://puzzle.kz" title="" target="_blanc"><img src="img/puzzle.png" alt="" /></a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<div hidden>
+			<div id="step-1" class="popup">
+				<div id="preloader">
+					<div class="preloader"></div>
+				</div>
+				<h2 class="title">Пожалуйста подождите</h2>
+				<p class="h2">пока наш менеджер рассмотрит заявку.<br/>На это может потребоваться до 20 минут.</p>
+				<div class="text-xs-center m-t-1">
+					<button href="#step-2" class="btn btn-2 aw" popup>Далее</button>
+				</div>
+			</div>
+			<div id="step-2" class="popup">
+				<form enctype="multipart/form-data">
+					<h2 class="title">Загрузите документы</h2>
+					<h3>для оформления займа:</h3>
+					<h4>Документы необходимы для суммы до 10 000 тенге</h4>
+					<div class="row">
+						<div class="col-md-4 pull-xs-none">
+							<label class="label">
+							    <span>Фото удстоверения с обоих сторон</span>
+							    <p>Можно прикрепить как один файл с двумя сторонами, так и два файла раздельных сканов лицевой и обратной сторон удостоверения</p>
+						    </label>
+							<label class="file"><span>Загрузить</span><input type="file" name="" multiple /></label>
+						</div>
+					</div>
+					<h4>Документы необходимые для суммы более 10 000 тенге</h4>
+					<div class="row">
+						<div class="col-md-4 pull-xs-none">
+							<label class="label">
+							    <span>Адресная справка</span>
+							    <p>Необязательно</p>
+						    </label>
+							<label class="file"><span>Загрузить</span><input type="file" name="" /></label>
+							<label class="label">
+							    <span>Справка о пенсионных отчислениях</span>
+							    <p>Необязательно</p>
+						    </label>
+							<label class="file"><span>Загрузить</span><input type="file" name="" /></label>
+							<p>Либо отправьте их на электронный адрес в ответ на наше письмо. </p>
+						</div>
+					</div>
+					<div class="text-xs-center">
+						<button type="button" href="#step-2-3" class="btn btn-2 aw" wait>Далее</button>
+					</div>
+				</form>
+			</div>
+			<div id="step-2-3" class="popup">
+				<div id="preloader">
+					<div class="preloader"></div>
+				</div>
+				<h2 class="title">Пожалуйста подождите</h2>
+				<p class="h2">пока Ваши документы обработает менеджер.</p>
+				<div class="text-xs-center m-t-1">
+					<button href="#step-3" class="btn btn-2 aw" popup>Далее</button>
+				</div>
+			</div>
+			<div id="step-3" class="popup">
+				<h2 class="title">Ваша заявка предварительно одобрена!</h2>
+				<p class="h2">Ваша заявка предварительно одобрена!<br/>Мы можем предоставить для вас заём<br/>в размере 10 000 тенге на срок 30 дней.<br/>Пожалуйста подтвердите своё согласие.</p>
+				<div class="row">
+					<!--div class="col-md-6 text-xs-right">
+						<label><input type="radio" name="confirm" value="Да, я согласен" /> Да, я согласен</label>
+					</div>
+					<div class="col-md-6 text-xs-left">
+						<label><input type="radio" name="confirm" value="Нет, я не согласен" /> Нет, я не согласен</label>
+					</div-->
+				</div>
+				<div class="text-xs-center">
+					<button type="button" href="#step-4" class="btn btn-2 aw" popup>Далее</button>
+				</div>
+			</div>
+			<div id="step-4" class="popup">
+				<form>
+					<div class="row">
+						<div class="col-md-8 pull-xs-none">
+							<h3 class="h2 title text-xs-center">Подпишите договор</h3>
+							<h3 class="text-xs-center">Получите и подпишите для дальнейшей загрузки в Кабинет:</h3>
+							<h2 class="title"><a href="#" title="" class="print">Распечатать договор для подписания</a></h2>
+							<h2 class="title"><span class="tomail">Мы отправили Ваш договор на email.</span></h2>
+							<h2 class="title"><span class="pen">Пожалуйста подпишите его</span></h2>
+							<h3 class="title text-xs-center">Загрузите подписанный вами договор<a href="http://avanse.puzzle.kz/img/example.png" title="Образец для подписания" class="example" target="_blanc">?</a></h3>
+							<p class="h3">(скан/pdf)</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4 pull-xs-none">
+							<label class="file"><span>Загрузить</span><input type="file" name="" /></label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-8 pull-xs-none">
+							<div class="contract">
+								<div class="dogovor_item" unselectable="on" onmousedown="return false;" onselectstart="return false;" oncontextmenu="return false;" ondragstart="return false;" ondblclick="return false;" marginwidth="0" marginheight="0"><p style="text-align: center;"><strong>Договор займа денег № <span class="user_input" id="idc0f0b1cb1a9dcc3a92bb4c1b173157f2">номер</span></strong></p><table style="width: 100%;" border="0" cellpadding="0" cellspacing="0"> 	<tbody> 		<tr> 			<td style="width: 50%; height: 9px;"> 			<p>Город <span class="user_input" id="id228c72c6551c6f94d05a948183f59c9e">указать место заключения</span></p> 			</td> 			<td style="width: 50%; height: 9px;"> 			<p align="right"><span class="user_input" id="id881498284d37634f46c84f36c044366c">ДД месяц ГГГГ</span> г. <span class="user_input" id="id5cf725f351f60ce9932bd23d214fd354">указать дату заключения</span></p> 			</td> 		</tr> 	</tbody> </table><p style="text-align: justify;"><strong style="text-align: justify;"><span class="user_input title_1" id="id27f80ad4ea7f20c52883989cf3defbd4"><span class="user_input" id="id17e1ca8599726182ed45e518faa10b49">Организационно-правовая форма и фирменное наименование юридического лица</span></span>&nbsp;</strong><span style="text-align: justify;">(далее - Заимодатель) в лице&nbsp;</span><span class="user_input" style="text-align: justify;" id="id2d98e419417902dc4bba4e90663315b8">должность фамилия имя отчество</span><span style="text-align: justify;">, действующего (ей) на основании&nbsp;</span><span class="user_input" style="text-align: justify;" id="id47a9995efa2e32dbb528498df7306f80">наименование документа</span><span style="text-align: justify;">, с одной стороны, и</span></p><p style="text-align: justify;"><strong style="text-align: justify;"><span class="user_input title_2" id="id070be6dbd59ff0c782ee70d95c8f7b31"><span class="user_input" id="id184e2d5643c08ceb5b4173dcacce9e76">Организационно-правовая форма и фирменное наименование юридического лица</span></span>&nbsp;</strong><span style="text-align: justify;">(далее - Заемщик) в лице&nbsp;</span><span class="user_input" style="text-align: justify;" id="id91dff8b55b151cfaa688a79b5b9012db">должность фамилия имя отчество</span><span style="text-align: justify;">, действующего (ей) на основании&nbsp;</span><span class="user_input" style="text-align: justify;" id="id3c214843470f28bb8f326887509ce468">наименование документа</span><span style="text-align: justify;">, с другой стороны,</span></p><p style="text-align: justify;">совместно именуемые – «Стороны», а по отдельности, как указано выше, или – «Сторона», заключили настоящий Договор займа денег (далее - Договор) о нижеследующем:<br></p><h4><span class="number">1.</span> ПРЕДМЕТ&nbsp;&nbsp;ДОГОВОРА</h4><p style="text-align: justify;"><span class="number">1.1.</span> Заимодатель обязуется передать в собственность Заемщику деньги <span style="text-align: justify;">(далее - Предмет займа)&nbsp;</span>в сроки, в размере и на условиях, предусмотренных Договором, а Заемщик обязуется своевременно и на условиях Договора возвратить Заимодателю такую же сумму денег и выплатить вознаграждение &nbsp;за пользование Предметом займа.<br></p><img style="width: 100%" src="/img/core/constructor/bg/bg4.jpg"><h4 style="text-align: center;"><span class="number">10.</span> <strong>ЗАКЛЮЧИТЕЛЬНЫЕ ПОЛОЖЕНИЯ</strong></h4><p style="text-align: justify;"><span class="number">10.1.</span> Договор вступает в силу с момента его подписания обеими Сторонами и действует до полного исполнения принятых на себя Сторонами обязательств.</p><p style="text-align: justify;"><span class="number">10.2.</span> После подписания Договора все предварительные переговоры по нему, переписка, предварительные договоры и протоколы о намерениях по вопросам, которые, так или иначе, относятся к Договору, утрачивают юридическую силу.<br></p><p style="text-align: justify;"><span class="number">10.3.</span> Договор, а также все правоотношения, возникающие в связи с исполнением Договора, регулируются и подлежат толкованию&nbsp;в соответствии с законодательством Республики Казахстан.</p><p style="text-align: justify;"><span class="number">10.4.</span> Стороны пришли к соглашению нотариально удостоверить Договор. При этом расходы по нотариальному удостоверению Договора несет Заемщик.&nbsp;</p><p style="text-align: justify;"><span class="number">10.5.</span> Содержание статей 380, 386, 388 Гражданского кодекса РК, статьи 34 Кодекса О браке (супружестве) и семье, нотариусом разъяснены и Сторонам понятны.</p><p style="text-align: justify;"><span class="number">10.6.</span> В соответствии с подпунктом 2) пункта 1 статьи 18 Закона «О нотариате», Сторонам разъяснены права и обязанности, а также Стороны предупреждены о последствиях совершаемого нотариального действия с тем, чтобы юридическая неосведомленность не была использована Сторонам во вред.</p><p style="text-align: justify;"><span class="number">10.7.</span> Стороны изъявили желание, чтобы текст Договора был изложен на русском языке, которым Стороны свободно владеют, понимают и в переводчике не нуждаются.</p><p style="text-align: justify;"><span class="number">10.8.</span> Текст Договора составлен и напечатан со слов Сторон, прочитан Сторонами и полностью соответствует действительному волеизъявлению Сторон.&nbsp;</p><p style="text-align: justify;"><span class="number">10.9.</span> Договор составлен в трех подлинных экземплярах, тексты которых имеют одинаковую юридическую силу: один из которых находится у Заимодателя, второй – у Заемщика, третий – у нотариуса. Приложения, дополнения, совершенные в порядке, регламентированном Договором, являются его неотъемлемой частью.</p><h4><span class="number">11.</span> РЕКВИЗИТЫ И ПОДПИСИ СТОРОН</h4><table style="font-size: 11.81px; width: 100%;" class="cke_show_border" border="0" cellpadding="1" cellspacing="1"><tbody><tr><td style="width: 40%;"><b>Заимодатель</b>:</td><td style="width: 20%;"><br></td><td style="width: 40%;"><b>Заемщик</b>:</td></tr><tr><td style="width: 245px;"><span class="user_input title_1" id="id4c5c56e409f8f4369a2a8fc95e6f986e"><span class="user_input" id="idf6d277d6fc33214374a9ab20d6c8cdd4"><strong>Организационно-правовая форма и фирменное наименование юридического лица</strong></span></span></td><td><br></td><td><span class="user_input title_2" id="id8ec742f567c837c3f3600381472f7323"><span class="user_input" id="idb03937920d98e6dc8d10b4658f238215"><strong>Организационно-правовая форма и фирменное наименование юридического лица</strong></span></span></td></tr><tr><td>Адрес местонахождения:&nbsp;<span class="user_input address_1" id="id14dd86bfe6183f88c43c1f058ee81e69"><span class="user_input" id="idf47c2b747fc0002517c66f32a6df2726">указать адрес</span></span></td><td><br></td><td>Адрес местонахождения:&nbsp;<span class="user_input address_2" id="id24428e22e0f585a005a72dcfeb36b6e7"><span class="user_input" id="id37b3e5b2d5a6e39876a84e05b98f95fa">указать адрес</span></span></td></tr><tr><td>тел./факс <span class="user_input tel_1" id="id6226811e22cbdcff7a28d1e5bb418768">+7&nbsp;<span class="user_input" id="id7f41feb07ac34709cad71cc899dbe444">(код) номер</span></span>, факс <span class="user_input fax_1" id="id8e13e893a3cc4ad1997c7e0b1c8681a7">+7&nbsp;<span class="user_input" id="id1d730e88ebd343c75ca4cfec1d4e9b6e">(код) номер</span></span>&nbsp;<span class="user_input contact_1" id="idfd5f6e3c722076abc355da6e50d4ac78">(<span class="user_input" id="id6af3bac61d069b8600ccc0686f77bd3d">иная контактная информация</span>)</span></td><td><br></td><td>тел./факс <span class="user_input tel_2" id="id0408a6f479bf2148d91770f9730552b5">+7&nbsp;<span class="user_input" id="idfe2a1eae3007ea0e4c56b5f87021a40d">(код) номер</span></span>, факс <span class="user_input fax_2" id="id6c6a2881ede49b331b16c76ec66fe577">+7&nbsp;<span class="user_input" id="idbb9b757d55e68b3ee70924f75b1ac256">(код) номер</span>&nbsp;</span><span class="user_input contact_2" id="id44e7a90579b27b451779ccb5cae7c1ac">(<span class="user_input" id="id20813158070d23e8060e58fbcd304e00">иная контактная информация</span>)</span></td></tr><tr><td>БИН&nbsp;<span class="user_input iinbin_1" id="id557606f9051663af04ac879822a1d88c"><span class="user_input" id="id9dc7b06ef35682c95e6c0d6eadb8d65d">указать</span></span></td><td><br></td><td>БИН&nbsp;<span class="user_input iinbin_2" id="idde77884fba136ed49fcabeb90f3e824b"><span class="user_input" id="id0d72e14cad41007657eed0350b615557">указать</span></span></td></tr><tr><td>ИИК&nbsp;<span class="user_input iik_1" id="id764461b884a07c8fd5fa2c8230e991fa"><span class="user_input" id="ide9740eff5be25cba74150330e529dcc7">указать</span></span></td><td><br></td><td>ИИК<span class="user_input iik_2" id="id52a5fc984002f7ca74f3676a9bcb4985">&nbsp;<span class="user_input" id="idaafbc60b72824a8714a8d668598635c7">указать</span></span></td></tr><tr><td>в&nbsp;<span class="user_input bank_1" id="id1ed062eccaf319c5f82b146370262bcb"><span class="user_input" id="id7123aa09839615492999f1dae7cec51f">наименование обслуживающего банка</span></span></td><td><br></td><td>в&nbsp;<span class="user_input contact_2" id="id99ef89b1d9df21e4363d061912ff5c16"><span class="user_input" id="id1d2e2bb3112e1381f718c2ee3333d1ce">наименование обслуживающего банка</span></span></td></tr><tr><td>БИК<span class="user_input" id="id931597d4e95d096ffca268859b72b2bd">&nbsp;<span class="user_input bik_1" id="id40757b8b6b72e741091a13227ab9dde7">указать</span></span></td><td><br></td><td>БИК&nbsp;<span class="user_input bik_2" id="idabc5076d36a390aec9284b6c96b7692a"><span class="user_input" id="idc822af322e0d949d37f3aba7e11f33d2">указать</span></span></td></tr><tr><td>Кбе&nbsp;<span class="user_input kbe_1" id="id58e91bc63321e5f559e39a0daf72a8ce"><span class="user_input" id="idec8cbe1941826d57ab8ed50cc4ea69eb">указать</span></span></td><td><br></td><td>Кбе&nbsp;<span class="user_input kbe_2" id="id7e306c340499679652f691a8a2f4c5fa"><span class="user_input" id="idc396e50ad2f994f4ebc4467cd854c611">указать</span></span></td></tr><tr><td><span class="user_input" id="id7bf82fdf84907b4e1e0e912b698cc2e4"><strong>Наименование должности лица, подписавшего Договор</strong></span></td><td><br></td><td><span class="user_input" id="id58e1f36c29253d160583d12ebb6a6292"><strong>Наименование должности лица, подписавшего Договор</strong></span></td></tr><tr><td><span class="user_input" id="id290fdad6cf3d9f554ba3676ae27e9edc">Личная подпись</span></td><td><br></td><td><span class="user_input" id="id5a757f7a4867b82e153ab0ad5d4424d8">Личная подпись</span></td></tr><tr><td><span class="user_input" id="id431f4975cab8c154cee88906172ccb51"><strong>Расшифровка подписи (инициал имени и фамилия)</strong></span></td><td><br></td><td><span class="user_input" id="idf33f163e5ff857a96fd624384278f892"><strong>Расшифровка подписи (инициал имени и фамилия)</strong></span></td></tr><tr><td style="width: 40px;"><span class="user_input" id="idf0d709ac611ea4e3765f38e5b684ed20">М.П.</span></td><td><br></td><td><span class="user_input" id="id5ac42bb48ce4ea9b310ca61f39101dbb">М.П.</span></td></tr></tbody></table></div>
+							</div>
+							<div class="text-xs-center">
+								<button type="button" href="#step-4-5" class="btn btn-2 aw" wait>Далее</button>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+			<!--div id="step-5" class="popup">
+				<form>
+					<h2 class="h1 title">Загрузите заполненную вами записку</h2>
+					<div class="row">
+						<div class="col-md-6 pull-xs-none">
+							<h4>***Если у вас нет возможности распечатать договор, воспользуйтесь запиской на заём. Просто перепишите на листок бумаги следующий текст и поставьте свою роспись:</h4>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-5 pull-xs-none">
+							<h3 class="title">ТОО «Ламбард Аванс Плюс КЗ»</h3>
+							<table>
+								<tr>
+									<td>Номер заёма</td>
+									<td>12-434</td>
+								</tr>
+								<tr>
+									<td>Дата</td>
+									<td>12.04.2018</td>
+								</tr>
+								<tr>
+									<td>Сумма заёма</td>
+									<td>10 000 тенге (десять тысяч тенге)</td>
+								</tr>
+							</table>
+							<h3>Ознакомлен (а) и согласен (а) </h3>
+							<table>
+								<tr> 				
+									<td>IBAN</td>
+									<td>12345 12345 12456 12598</td>
+								</tr>
+								<tr>
+									<td>ИИН</td>
+									<td>524184</td>
+								</tr>
+								<tr>
+									<td>ФИО</td>
+									<td>Петров Иван Иванович»</td>
+								</tr>
+								<tr>
+									<td>Подпись</td>
+									<td></td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<h2 class="title">Загрузите подписанный вами договор</h2>
+					<p class="h3">(скан/pdf)</p>
+					<div class="row">
+						<div class="col-md-4 pull-xs-none">
+							<label class="file"><span>Загрузить</span><input type="file" name="" /></label>
+						</div>
+					</div>
+					<div class="text-xs-center">
+						<button type="button" href="#step-5-6" class="btn btn-2 aw" wait>Далее</button>
+					</div>
+				</form>
+			</div-->
+			<div id="step-4-5" class="popup">
+				<div id="preloader">
+					<div class="preloader"></div>
+				</div>
+				<h2 class="title">Ваш договор обрабатывается</h2>
+				<div class="text-xs-center m-t-1">
+					<button href="#step-5" class="btn btn-2 aw" popup>Далее</button>
+				</div>
+			</div>
+			<div id="step-5" class="popup">
+				<form>
+					<h2 class="title">Подтверждение заявки</h2>
+					<div class="text-xs-center">
+						<button type="button" class="btn btn-1 aw">Получить код подтверждения</button>
+					</div>
+					<p class="h2">На Ваш номер телефона отправлен одноразовый смс-код для подтверждения телефона.<br/>Код будет действителен в течение 2х часов.<br/>Введя код, вы подтверждаете свое согласие на условия оферты.</p>
+					<div class="row">
+						<div class="col-md-3 pull-xs-none">
+							<input type="text" name="code" placeholder="_&nbsp;_&nbsp;_&nbsp;_" maxlength="4" />
+						    <a href="#" title="">Получить код еще раз</a>
+						</div>
+					</div>
+				</form>
+				<div class="text-xs-center m-t-1">
+					<button href="#step-6" class="btn btn-2 aw" popup>Далее</button>
+				</div>
+			</div>
+			<div id="step-6" class="popup">
+				<button class="mfp-close" style="color: #000;">&times;</button>
+				<h2 class="title">Ваш займ одобрен</h2>
+				<p class="h2">вы получите деньги на свой расчетный счет KZ ******.... в течении 4 часов. Статус своего займа вы можете отслеживать в личном кабинете. Воспользуйтесь нашим сервисом интернет платежей для погашения займа. Вы всегда можете продлить свой заём через личный кабинет.</p>
+				<form>
+					<div class="row">
+						<div class="col-md-3 pull-xs-none text-xs-center">
+							<input type="hidden" name="" value="KZ ******...." />
+							<button type="button" class="btn btn-2 aw">Получить</button>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div id="consultation" class="popup">
+				<form>
+					<h2>Получить консультацию</h2>
+					<input type="text" name="" placeholder="Телефон" />
+					<div class="text-xs-center">
+						<button class="btn btn-2 aw">Заказать звонок</button>
+					</div>
+				</form>
+			</div>
+			<div id="sms" class="popup">
+				<form>
+					<h2><span>Введите смс-код</span></h2>
+					<p>На Ваш телефон отправлен код <br/>для подтверждения телефона</p>
+					<div class="row">
+						<div class="col-md-8 pull-xs-none">
+							<input type="text" name="code" placeholder="_&nbsp;_&nbsp;_&nbsp;_" maxlength="4" />
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<script src="js/jquery.min.js" type="text/javascript"></script>
+		<script src="js/jquery-ui.min.js" type="text/javascript"></script>
+		<script src="js/jquery.magnific-popup.min.js" type="text/javascript"></script>
+		<script src="js/slick.min.js" type="text/javascript"></script>
+		<script src="js/main.js" type="text/javascript"></script>
+	</body>
+</html>

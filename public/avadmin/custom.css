@@ -1,0 +1,15 @@
+.panel-heading {
+  padding: 2rem;
+}
+
+.loan_list_table .form-control {
+  width: 100% !Important;
+}
+
+.padding-1 {
+  padding: 1rem;
+}
+
+.loan_forecast_form_toExcel{
+  display: none;
+}
